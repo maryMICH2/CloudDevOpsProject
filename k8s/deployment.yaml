@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: py-app-deployment
+  namespace: ivolve
+  labels:
+    app: py-app 
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: py-app
+  template:
+    metadata:
+      labels:
+        app: py-app
+    spec:
+      containers:
+      - name: py-app
+        image: maaryii/nti-app
+        ports:
+        - containerPort: 5000
+
