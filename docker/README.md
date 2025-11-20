@@ -27,6 +27,7 @@ Run this command in the project directory:
 docker build -t nti-app .
 ```
 ![docker-build](screenshots/docker-build.png)
+
 ![docker-images](screenshots/docker-images.png)
 ### 2. Run the Container
 
