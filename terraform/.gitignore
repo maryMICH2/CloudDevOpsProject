@@ -1,4 +1,10 @@
+# Terraform State and Cache Files
 .terraform/
 terraform.tfstate
 terraform.tfstate.backup
 .terraform.lock.hcl
+
+# Optional additions for completeness:
+*.tfvars
+*.tfplan
+crash.log
