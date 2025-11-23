@@ -1,4 +1,4 @@
-# NTI Graduation Project - Ansible Automation
+# Ansible Automation
 
 This repository automates EC2 instance management, Jenkins deployment, and Trivy scans using Ansible.
 
