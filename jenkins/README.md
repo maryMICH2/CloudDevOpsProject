@@ -60,9 +60,6 @@ jenkins-shared-library/
     └── pushManifestsRepo.groovy
 ```
 
-![Library Files](https://github.com/user-attachments/assets/f46f587d-ea76-413f-a619-902b0f78e4db)
-
-
 ### Register Library in Jenkins
 
 1. Go to **Manage Jenkins > Configure System**  
