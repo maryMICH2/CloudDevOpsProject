@@ -1,0 +1,15 @@
+---
+- name: Create Jenkins user
+  user:
+    name: jenkins
+    shell: /bin/bash
+    state: present
+
+- name: Ensure SSH directory exists
+  file:
+    path: /home/jenkins/.ssh
+    state: directory
+    owner: jenkins
+    group: jenkins
+    mode: '0700'
+

@@ -1,0 +1,17 @@
+---
+- name: Install Trivy
+  get_url:
+    url: https://github.com/aquasecurity/trivy/releases/download/v0.51.1/trivy_0.51.1_Linux-64bit.tar.gz
+    dest: /tmp/trivy.tar.gz
+
+- name: Extract Trivy
+  unarchive:
+    src: /tmp/trivy.tar.gz
+    dest: /tmp/
+    remote_src: yes
+
+- name: Move Trivy binary to /usr/local/bin
+  command: mv /tmp/trivy /usr/local/bin/trivy
+  args:
+    creates: /usr/local/bin/trivy
+

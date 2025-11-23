@@ -1,0 +1,16 @@
+---
+- name: Setup Jenkins Master
+  hosts: tag_jenkins-master
+  become: true
+  roles:
+    - common
+    - jenkins-master
+
+- name: Setup Jenkins Worker
+  hosts: tag_jenkins-worker
+  become: true
+  roles:
+    - common
+    - jenkins-slave
+    - trivy
+
