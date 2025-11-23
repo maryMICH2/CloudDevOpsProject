@@ -53,10 +53,6 @@ Wait for a few minutes, then retrieve the external IP:
 kubectl get svc argocd-server -n argocd
 ```
 
-Look for the `EXTERNAL-IP` field of the `argocd-server` service.
-
-<img width="1196" height="276" alt="Image" src="https://github.com/user-attachments/assets/e7baf526-0d5b-451d-bf32-57f312302823" />
-
 You can also see this on the EKS console:
 
 <img width="1034" height="678" alt="Image" src="https://github.com/user-attachments/assets/50b37487-660e-46d4-9ed4-9922588d4ffa" />
