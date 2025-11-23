@@ -108,8 +108,6 @@ To trigger the CI/CD process:
 
 - Docker Hub with new image tag 
   ![DockerHub](https://github.com/user-attachments/assets/01b1d85a-32c0-41e5-9257-edee14d07e54) 
-- GitHub commit with updated manifest 
-  ![GitHub Commit](https://github.com/user-attachments/assets/b063325b-1a7a-44b6-89ce-488a3777ea28) 
 - Output of `kubectl get pods` 
   ![Pods Updated](https://github.com/user-attachments/assets/dcaf938e-b700-413a-8350-24069e62e988) 
 - Build artifacts including `trivy-BUILDNUMBER.jar` 
